@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".MainActivityFile2">
+
+    <TextView
+        android:id="@+id/textViewFile"
+        android:layout_width="352dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/yellow"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="@string/readData"
+        android:textColorHint="#3E393B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintStart_toEndOf="@+id/editTextFile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFile"
+        android:layout_width="331dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:background="@color/yellow"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enterText"
+        android:inputType="text"
+        android:textColorHint="#3E393B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/readFile"
+        android:layout_width="152dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:onClick="readFile"
+        android:text="@string/textButtonReadFile"
+        android:textColor="@color/darkViol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toEndOf="@+id/writeFile"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFile" />
+
+    <Button
+        android:id="@+id/writeFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:onClick="writeFile"
+        android:text="@string/textButtonWriteFile"
+        android:textColor="@color/darkViol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFile" />
+
+    <Button
+        android:id="@+id/buttonRetutnMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/yellow"
+        android:onClick="returnMainPage"
+        android:text="@string/returnMP"
+        android:textColor="@color/darkViol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readFile"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

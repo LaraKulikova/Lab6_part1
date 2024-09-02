@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lab6_part1</string>
+    <string name="buttonWriteExternal">Запись во внешний источник</string>
+</resources>

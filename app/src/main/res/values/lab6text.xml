@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textExersize">
+Разработать приложение, которое может по выбору пользователя сохранять
+        данные во внутреннем, внешнем хранилище или SQLlite.
+        В Shared Preferences сохранять последнее введенное значение в
+        поле ввода.Реализовать вывод в разные текстовые поля
+        всех сохраненных значений.
+Добавить возможность удаления и обновления елемента в базе данных.
+    </string>
+    <string name="goToSP">Демонстрация работы сShared Preferences</string>
+    <string name="goToFile">Демонстрация работы с файлом</string>
+    <string name="goTosql">Демонстрация работы c SQL</string>
+    <string name="textButtonWriteSP">запись SharedPreferences</string>
+    <string name="textButtonReadSP">считать из SharedPreferences</string>
+    <string name="textButtonWriteFile">запись в файл</string>
+    <string name="textButtonReadFile">считать из файла</string>
+    <string name="textButtonWriteSQL">запись в SQL</string>
+    <string name="textButtonReadSQL">считать из SQL</string>
+    <string name="shared_preferences_toast">Shared Preferences</string>
+    <string name="goToSomethingPage">"Осуществляется переход на страницу  для просмотра работы с "</string>
+    <string name="file">File</string>
+    <string name="sql">SQL</string>
+    <string name="returnMP">Возврат на главную страницу</string>
+    <string name="enterText">Введите текст</string>
+    <string name="readData">Полученные данные</string>
+
+</resources>

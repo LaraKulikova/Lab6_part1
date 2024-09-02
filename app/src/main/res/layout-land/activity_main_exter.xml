@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".MainActivityExter">
+
+    <TextView
+        android:id="@+id/textViewEx"
+        android:layout_width="320dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:hint="@string/readData"
+        android:textColorHint="#3E393B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toEndOf="@+id/editTextExt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextExt"
+        android:layout_width="305dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@color/yellow"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enterText"
+        android:inputType="text"
+        android:textColorHint="#3E393B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/readEx"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:onClick="readExternal"
+        android:text="@string/textButtonReadFile"
+        android:textColor="@color/darkViol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/writeEx"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEx" />
+
+    <Button
+        android:id="@+id/writeEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:onClick="writeExternal"
+        android:text="@string/buttonWriteExternal"
+        android:textColor="@color/darkViol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExt" />
+
+    <Button
+        android:id="@+id/buttonRetutnMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:onClick="returnMainPage"
+        android:text="@string/returnMP"
+        android:textColor="@color/darkViol"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="240dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

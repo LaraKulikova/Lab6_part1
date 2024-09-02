@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".MainActivitySQL">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="316dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/rose"
+        android:ems="10"
+        android:hint="Введите имя"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="191dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/rose"
+        android:ems="10"
+        android:hint="Введите возраст"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toEndOf="@+id/editTextName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWriteToBD"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CE93D8"
+        android:onClick="writeToBD"
+        android:text="Записать"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <Button
+        android:id="@+id/buttonUpdateToBD"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CE93D8"
+        android:onClick="updateData"
+        android:text="Обновить"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/buttonWriteToBD"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+    <Button
+        android:id="@+id/buttonDeleteFromBD"
+        android:layout_width="290dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CE93D8"
+        android:onClick="deleteData"
+        android:text="Удалить выбранную запись"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toEndOf="@+id/buttonUpdateToBD"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+    <TextView
+        android:id="@+id/textViewReadData"
+        android:layout_width="410dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="40dp"
+        android:background="#FFAB91"
+        android:gravity="center"
+        android:hint="Здесь будут отображены полученные данные"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toEndOf="@+id/buttonReadBD"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteFromBD" />
+
+    <Button
+        android:id="@+id/buttonReadBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFAB91"
+        android:onClick="readFromDB"
+        android:text="Считать данные из БД"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWriteToBD" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="180dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#CE93D8"
+        android:onClick="clearData"
+        android:text="Очистить БД"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textViewReadData"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReadBD" />
+
+    <Button
+        android:id="@+id/buttonRetutnMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:onClick="returnMainPage"
+        android:text="@string/returnMP"
+        android:textColor="@color/darkViol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReadData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
